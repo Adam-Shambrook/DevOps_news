@@ -5,7 +5,9 @@ A python script to scrape the first 6 pages of HackerNews for articles matching 
 # Dependencies:
 
 Python3         
+
 BeautifulSoup4 : pip3 install beautifulsoup4
+
 requests       : pip3 install requests
 
 
