@@ -43,9 +43,11 @@ def create_custom_hn(links, subtext):
     href = item.get('href', None)
     vote = subtext[idx].select('.score')
     if len(vote):
+      list = ['cloud', 'Puppet', 'DevOps', 'Dev', 'IT','SSH', 'WinRM','Open-Source','Kubernetes', 'k8', 'Linux','Windows', 'Enterprise', 'Bank', 'Sysadmin', 'Compl', 'Secur']
       points = int(vote[0].getText().replace(' points', ''))
-      if 'cloud' in title or 'Puppet' in title or 'Dev' in title or 'IT' in title:
-        hn.append({'title': title, 'link': href, 'votes': points})
+      for keyword in list:
+        if keyword in title:
+          hn.append({'title': title, 'link': href, 'votes': points})
   return sort_stories_by_votes(hn)
  
 pprint.pprint(create_custom_hn(mega_links, mega_subtext))
