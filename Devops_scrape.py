@@ -2,6 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import pprint
 
+# Keyword list:
+list = ['cloud', 'Puppet', 'DevOps', 'Dev', 'IT','SSH', 'WinRM','Open-Source','Kubernetes', 'k8', 'Linux','Windows', 'Enterprise', 'Bank', 'Sysadmin', 'Compl', 'Secur']
+
+
 res = requests.get('https://news.ycombinator.com/news')
 res2 = requests.get('https://news.ycombinator.com/news?p=2')
 res3 = requests.get('https://news.ycombinator.com/news?p=3')
@@ -43,7 +47,7 @@ def create_custom_hn(links, subtext):
     href = item.get('href', None)
     vote = subtext[idx].select('.score')
     if len(vote):
-      list = ['cloud', 'Puppet', 'DevOps', 'Dev', 'IT','SSH', 'WinRM','Open-Source','Kubernetes', 'k8', 'Linux','Windows', 'Enterprise', 'Bank', 'Sysadmin', 'Compl', 'Secur']
+      
       points = int(vote[0].getText().replace(' points', ''))
       for keyword in list:
         if keyword in title:
