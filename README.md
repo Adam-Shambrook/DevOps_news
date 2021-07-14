@@ -2,14 +2,14 @@
 
 A python script to scrape the first 6 pages of HackerNews for articles matching DevOps related keywords in a list.
 
-#Userguide:
+# Userguide:
 
 From your command line or terminal navigate to the location of the file.
 
 Execute: 
 python3 Devops_scrape.py
 
-#Contribute:
+# Contribute:
 
 Please feel free to add any relevant keywords you'd like (Line 6)
 
