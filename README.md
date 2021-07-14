@@ -23,5 +23,3 @@ python3 Devops_scrape.py
 Please feel free to add any relevant keywords you'd like (Line 6)
 
 
-Not the neatest - Line 49 is left from logic to filter for the highest scoring articles
-
