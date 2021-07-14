@@ -2,6 +2,13 @@
 
 A python script to scrape the first 6 pages of HackerNews for articles matching DevOps related keywords in a list.
 
+# Dependencies:
+
+Python3         
+BeautifulSoup4 : pip3 install beautifulsoup4
+requests       : pip3 install requests
+
+
 # Userguide:
 
 From your command line or terminal navigate to the location of the file.
